@@ -1,0 +1,111 @@
+.cont {
+    width: 240px;
+    height: 60px;
+    border: 1px solid black;
+    margin: 30px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+
+    font-size: 20px;
+}
+
+span {
+    color: aliceblue;
+}
+
+li {
+    color: aliceblue;
+}
+
+.first {
+    width: 80px;
+    height: 60px;
+    background-color: rgb(96, 126, 170);
+    display: flex;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+    transition: .4s;
+}
+
+.first:hover {
+    background-color: rgb(63, 161, 241);
+}
+
+.second {
+    width: 80px;
+    height: 60px;
+    background-color: rgb(96, 126, 170);
+    display: flex;
+    border: 1px solid black;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    transition: .4s;
+}
+
+.second:hover {
+    background-color: rgb(63, 161, 241);
+}
+
+.dropdown {
+    animation-name: drd;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    display: none;
+    position: absolute;
+    left: -1px;
+    bottom: 1px;
+
+}
+
+@keyframes drd {
+    from {
+        transform: translateY(0px);
+        background-color:
+    }
+
+    to {
+        transform: translateY(59px);
+        background-color:
+    }
+
+}
+
+
+.second:hover .dropdown {
+    display: block;
+}
+
+
+.dropdown li {
+    width: 79px;
+    height: 20px;
+    background-color: rgb(63, 161, 241);
+    transition: .5s;
+
+}
+
+.dropdown li:hover {
+    width: 80px;
+    height: 20px;
+    background-color: rgb(26, 50, 94);
+
+}
+
+
+
+.third {
+    width: 80px;
+    height: 60px;
+    background-color: rgb(96, 126, 170);
+    display: flex;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+    transition: .4s;
+}
+
+.third:hover {
+    background-color: rgb(63, 161, 241);
+}
